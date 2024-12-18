@@ -1,0 +1,102 @@
+@media (min-width: 768px) {
+  .home {
+    &-img {
+      width: 320px;
+    }
+    &-title {
+      font-size: 256px;
+      top: -64px;
+    }
+    &-social {
+      top: 0;
+      bottom: 0;
+      align-content: center;
+      column-gap: 80px;
+      left: -220px;
+    }
+    &-social {
+      margin-left: 20px;
+    }
+  }
+  .sponsor-container{
+    grid-template-columns: repeat(4, max-content) !important;
+  }
+}
+@media (min-width: 1150px) {
+  .home {
+    &-img {
+      width: 500px;
+    }
+    &-title {
+      font-size: 25rem;
+      top: -8px;
+      column-gap: 16px;
+    }
+    &-tooltip-img {
+      width: initial;
+    }
+    &-tooltip-text {
+      transform: translate(82px, -52px);
+      font-size: $normal-font-size;
+    }
+    &-social-links {
+      row-gap: 16px;
+    }
+    &-social-link {
+      font-size: 24px;
+    }
+  }
+  .about {
+    &-container {
+      grid-template-columns: 400px 500px;
+    }
+    &-img {
+      width: 500px !important;
+      // ilgili elemana vermek istediğimiz özellik önceki stil özelliği ile çakışınca bunun
+      // önemli olduğunu belirttik
+    }
+    &-data {
+      text-align: initial !important;
+    }
+  }
+  .model {
+    &-img {
+      width: 700px !important;
+    }
+  }
+  .model-tooltip-text {
+    font-size: $normal-font-size !important;
+  }
+  .model-tooltip-3 {
+    left: 400px !important;
+    bottom: 150px !important;
+  }
+  .model-tooltip-1 {
+    left: 13.5rem !important;
+    top: 205px !important;
+  }
+  .model-tooltip-4 {
+    left: 120px !important;
+    bottom: 130px !important;
+  }
+}
+@media (max-width: 768px) {
+  .home-social {
+    left: -100px;
+  }
+}
+@media (max-width: 850px) {
+  header .nav-list {
+    display: none;
+  }
+
+  .favorites {
+    &-card {
+      flex-direction: column;
+      align-items: center;
+      img {
+        width: 150px !important;
+      }
+    }
+  }
+}

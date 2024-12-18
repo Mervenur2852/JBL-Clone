@@ -1,0 +1,69 @@
+@import "./variables";
+.footer {
+  padding-block: 32px;
+  margin-bottom: 40px;
+  
+
+  &-logo {
+    color: $first-color;
+    font-size: $h2-font-size;
+    font-weight: $font-semi-bold;
+  }
+  &-data-grid {
+    display: grid;
+    row-gap: 50px !important;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  &-title{
+    font-size: $h3-font-size;
+    margin-bottom: 32px;
+  }
+  &-links{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  &-link{
+    color: $text-color;
+    transition: all 0.5s;
+    &:hover{
+        color: $first-color;
+    }
+  }
+  &-form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    input{
+      border: none;
+      outline: none;
+      padding: 20px 30px;
+      width: 70%;
+      border-radius: 64px;
+      background: $container-color;
+      color: $text-color;
+    }
+    button{
+      width: 70%;
+    }
+  }
+  &-social{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    div{
+      display: flex;
+      gap: 16px;
+      margin-bottom: 10px;
+      a{
+        color: $text-color;
+        &:hover{
+          color: $first-color;
+        }
+
+      }
+    }
+  }
+}

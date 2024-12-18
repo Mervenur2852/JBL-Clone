@@ -1,0 +1,11 @@
+@mixin laptop {
+  @media (max-width: 1400px) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media (max-width: 850px) {
+    @content;
+  }
+}
